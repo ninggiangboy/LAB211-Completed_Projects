@@ -6,9 +6,10 @@ package NormalizeText.utils;
  */
 public class Normalize {
     public static String NormalizeText(String text) {
-        text = text.trim();
-        if (text.isEmpty())
+        if (text.trim().isEmpty())
             return "";
+
+        text = text.trim();
 
         text = text.replaceAll("[^\\S\\r\\n]+", " ");
 
