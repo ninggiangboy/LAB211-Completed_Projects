@@ -9,8 +9,12 @@ import NormalizeText.utils.Normalize;
  */
 public class Main {
     public static void main(String[] args) {
-        String origin = Files.readFileToString("input.txt");
-        String normal = Normalize.NormalizeText(origin);
-        Files.writeStringToFile("output.txt", normal);
+       try {
+            String origin = Files.readFileToString("input.txt");
+            String normal = Normalize.NormalizeText(origin);
+            Files.writeStringToFile("output.txt", normal);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
