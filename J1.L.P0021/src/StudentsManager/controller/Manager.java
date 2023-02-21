@@ -41,7 +41,7 @@ public class Manager {
             addCourse(nSt);
             list.add(nSt);
             count++;
-            if (list.size() < 10) // continue if list have less than 10 st
+            if (list.size() < 10)
                 continue;
             if (!Inputted.inputBoolean("Do you want to continue create new students (Y/N)?: "))
                 break;
