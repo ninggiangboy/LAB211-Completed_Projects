@@ -1,4 +1,4 @@
-package NumberSystem;
+package NumberSystem.utils;
 
 import java.math.BigInteger;
 import java.util.Stack;

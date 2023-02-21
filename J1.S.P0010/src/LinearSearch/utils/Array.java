@@ -1,4 +1,4 @@
-package LinearSearch;
+package LinearSearch.utils;
 
 import java.util.Arrays;
 import java.util.Random;

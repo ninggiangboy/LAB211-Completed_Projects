@@ -1,4 +1,8 @@
-package LinearSearch;
+package LinearSearch.controller;
+
+import LinearSearch.utils.Array;
+import LinearSearch.utils.Search;
+import LinearSearch.view.Inputted;
 
 /**
  *

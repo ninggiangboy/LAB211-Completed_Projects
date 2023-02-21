@@ -1,4 +1,4 @@
-package LinearSearch;
+package LinearSearch.view;
 
 import java.util.Scanner;
 

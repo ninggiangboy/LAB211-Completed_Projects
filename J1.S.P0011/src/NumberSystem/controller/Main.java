@@ -1,4 +1,8 @@
-package NumberSystem;
+package NumberSystem.controller;
+
+import NumberSystem.utils.Converter;
+import NumberSystem.view.Inputted;
+import NumberSystem.view.Menu;
 
 /**
  *

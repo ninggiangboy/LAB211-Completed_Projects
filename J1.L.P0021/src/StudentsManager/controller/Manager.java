@@ -145,7 +145,7 @@ public class Manager {
             return;
         }
 
-        String format = "| %3s  | %-7s | %-35s | %7s    |  %4s      |%n";
+        String format = "| %3s  | %-7s | %-35s | %7s    |  %4s      |%n"; // format of each row
 
         System.out.println(
                 "+--------------------------------------------------------------------------------+");

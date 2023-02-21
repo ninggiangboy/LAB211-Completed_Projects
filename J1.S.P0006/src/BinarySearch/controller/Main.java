@@ -1,4 +1,9 @@
-package BinarySearch;
+package BinarySearch.controller;
+
+import BinarySearch.utils.Array;
+import BinarySearch.utils.Search;
+import BinarySearch.utils.Sort;
+import BinarySearch.view.Inputted;
 
 /**
  *

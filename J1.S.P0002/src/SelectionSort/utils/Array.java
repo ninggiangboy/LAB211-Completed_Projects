@@ -1,4 +1,4 @@
-package SelectionSort;
+package SelectionSort.utils;
 
 import java.util.Arrays;
 import java.util.Random;

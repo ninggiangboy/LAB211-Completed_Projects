@@ -1,4 +1,8 @@
-package SelectionSort;
+package SelectionSort.controller;
+
+import SelectionSort.utils.Array;
+import SelectionSort.utils.Sort;
+import SelectionSort.view.Inputted;
 
 /**
  *

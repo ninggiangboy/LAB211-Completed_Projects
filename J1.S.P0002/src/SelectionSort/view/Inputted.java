@@ -1,4 +1,4 @@
-package SelectionSort;
+package SelectionSort.view;
 
 import java.util.Scanner;
 
