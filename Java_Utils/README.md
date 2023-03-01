@@ -10,7 +10,7 @@ The workspace contains one folders by default, where:
 
 ## Class Structure
 
-# ArrayUtils
+### ArrayUtils
 
 This class provides two static methods to work with arrays of integers.
 
@@ -18,7 +18,7 @@ The `generateRandomElement` method will generate random integers between the spe
 
 The `printArray` method will print the contents of the given array to the console in a formatted string.
 
-# FileUtils
+### FileUtils
 
 This class provides two static methods to work with files.
 
@@ -26,7 +26,7 @@ The `readTextFile` method will read the content of a file into a single string.
 
 The `writeTextFile` method will write a string to a file.
 
-# Inputted
+### Inputted
 
 This class provides methods for validating user input.
 
@@ -44,22 +44,22 @@ The `inputEmail` method will prompt the user with a message and waits for them t
 
 The `inputPhone` method will prompt the user with a message and waits for them to input an phone number.
 
-# Menu
+### Menu
 
 The `getChoice` method will display a menu of options to the user, prompts them to select an option, and returns their choice as an integer.
 
 The `printMenu` method will print a menu of options to the console, with each option numbered.
 
-# Normalize
+### Normalize
 
 The `removeUnnecessaryBlank` method will remove all unnecessary whitespace from the given string by replacing all consecutive whitespace characters with a single space.
 
 The `removeAllBlank` method will remove all whitespace from the given string.
 
-# SearchUtils
+### SearchUtils
 
 The `printResult` method will print the search result to the console.
 
-# SortUtils
+### SortUtils
 
 The `checkSort` method checks if the given integer array is sorted in increasing or decreasing order, or not sorted at all.
