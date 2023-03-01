@@ -40,7 +40,7 @@ This class provides methods for validating user input.
 
 - The `pressYN` method will prompt the user with a message and waits for them to input "y" or "n" (return true), or "yes" or "no" (return false).
 
-- The `inputEmail` method will prompt the user with a message and waits for them to input an email address with the format `<account name>@<domain>`.
+- The `inputEmail` method will prompt the user with a message and waits for them to input an email address with the format `<account_name>@<domain>`.
 
 - The `inputPhone` method will prompt the user with a message and waits for them to input an phone number.
 
