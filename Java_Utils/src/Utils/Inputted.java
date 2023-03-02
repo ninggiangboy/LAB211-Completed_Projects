@@ -14,10 +14,11 @@ public class Inputted {
      * the user's input does not match the regular expression, an error message
      * is displayed and the user is prompted to try again.
      *
-     * @param msg   the message to display to the user when prompting for input.
-     * @param regex the regular expression used to validate the user's input.
-     * @param errFormat   the error message to display to the user when their input does
-     *              not match the regular expression.
+     * @param msg       the message to display to the user when prompting for input.
+     * @param regex     the regular expression used to validate the user's input.
+     * @param errFormat the error message to display to the user when their input
+     *                  does
+     *                  not match the regular expression.
      * @return the validated user input.
      *
      * @throws IllegalArgumentException if any of the input parameters are null.
