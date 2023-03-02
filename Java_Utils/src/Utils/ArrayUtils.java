@@ -58,10 +58,7 @@ public class ArrayUtils {
             if (!isIncreasing && !isDecreasing)
                 return 0;
         }
-        if (isIncreasing)
-            return 1;
-        else
-            return 2;
+        return isIncreasing ? 1 : 2;
     }
 
     /**
