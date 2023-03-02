@@ -50,10 +50,10 @@ public class ArrayUtils {
         boolean isIncreasing = true;
         boolean isDecreasing = true;
 
-        for (int i = 0; i <= arr.length - 1; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] >= arr[i + 1])
                 isIncreasing = false;
-            else if (arr[i] < arr[i + 1])
+            else if (arr[i] <= arr[i + 1])
                 isDecreasing = false;
             if (!isIncreasing && !isDecreasing)
                 return 0;
