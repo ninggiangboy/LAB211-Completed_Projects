@@ -75,6 +75,11 @@ public class Inputted {
             String errorOutOfRange,
             int min,
             int max) {
+        if (max < min) {
+            int temp = max;
+            max = min;
+            min = temp;
+        }
         String regex = "^[+-]?\\d+$";
         BigInteger output;
         while (true) {
@@ -108,6 +113,11 @@ public class Inputted {
             String errorOutOfRange,
             double min,
             double max) {
+        if (max < min) {
+            double temp = max;
+            max = min;
+            min = temp;
+        }
         String regex = "^-?\\d+(\\.\\d+)?([eE][-+]?\\d+)?$";
         BigDecimal output;
         while (true) {
