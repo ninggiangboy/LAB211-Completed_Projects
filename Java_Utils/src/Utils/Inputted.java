@@ -32,7 +32,6 @@ public class Inputted {
                 return output;
             } else {
                 System.err.println(errFormat);
-                System.out.print("Try again: ");
             }
         }
     }
