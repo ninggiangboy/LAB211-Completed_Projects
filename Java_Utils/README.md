@@ -46,11 +46,15 @@ This class provides methods for validating user input.
 
 ### Menu
 
+This class provides two static methods to achieve specific tasks related to menu options.
+
 - The `getChoice` method will display a menu of options to the user, prompts them to select an option, and returns their choice as an integer.
 
 - The `printMenu` method will print a menu of options to the console, with each option numbered.
 
 ### Normalize
+
+This class provides two static methods to normalize a given string
 
 - The `removeUnnecessaryBlank` method will remove all unnecessary whitespace from the given string by replacing all consecutive whitespace characters with a single space.
 
@@ -58,8 +62,12 @@ This class provides methods for validating user input.
 
 ### SearchUtils
 
+This class provides static methods to perform search operations on data.
+
 - The `printResult` method will print the search result to the console.
 
 ### SortUtils
+
+This class provides static methods to perform sorting operations on data.
 
 - The `checkSort` method checks if the given integer array is sorted in increasing or decreasing order, or not sorted at all.
