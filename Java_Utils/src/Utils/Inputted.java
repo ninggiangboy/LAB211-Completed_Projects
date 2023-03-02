@@ -80,9 +80,7 @@ public class Inputted {
         while (true) {
             output = new BigInteger(getByRegex(msg, regex, errorNumberFormat));
             if (output.compareTo(BigInteger.valueOf(min)) < 0
-                    || output.compareTo(BigInteger.valueOf(max)) > 0
-                    || output.compareTo(BigInteger.valueOf(Integer.MIN_VALUE)) < 0
-                    || output.compareTo(BigInteger.valueOf(Integer.MAX_VALUE)) > 0) {
+                    || output.compareTo(BigInteger.valueOf(max)) > 0) {
                 System.err.println(errorOutOfRange);
             } else {
                 return output.intValue();
@@ -115,9 +113,7 @@ public class Inputted {
         while (true) {
             output = new BigDecimal(getByRegex(msg, regex, errorNumberFormat));
             if (output.compareTo(BigDecimal.valueOf(min)) < 0
-                    || output.compareTo(BigDecimal.valueOf(max)) > 0
-                    || output.compareTo(BigDecimal.valueOf(Double.MIN_VALUE)) < 0
-                    || output.compareTo(BigDecimal.valueOf(Double.MAX_VALUE)) > 0) {
+                    || output.compareTo(BigDecimal.valueOf(max)) > 0) {
                 System.err.println(errorOutOfRange);
             } else {
                 return output.doubleValue();
