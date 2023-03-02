@@ -16,7 +16,7 @@ public class Inputted {
      *
      * @param msg   the message to display to the user when prompting for input.
      * @param regex the regular expression used to validate the user's input.
-     * @param err   the error message to display to the user when their input does
+     * @param errFormat   the error message to display to the user when their input does
      *              not match the regular expression.
      * @return the validated user input.
      *
