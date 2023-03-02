@@ -22,15 +22,15 @@ public class Inputted {
      *
      * @throws IllegalArgumentException if any of the input parameters are null.
      */
-    private static String getByRegex(String msg, String regex, String err) {
+    private static String getByRegex(String msg, String regex, String errFormat) {
         String output;
-        System.out.print(msg);
         while (true) {
+            System.out.print(msg);
             output = INPUT.nextLine().trim();
             if (output.matches(regex)) {
                 return output;
             } else {
-                System.err.println(err);
+                System.err.println(errFormat);
                 System.out.print("Try again: ");
             }
         }
