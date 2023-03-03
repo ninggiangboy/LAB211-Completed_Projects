@@ -12,11 +12,15 @@ The workspace contains one folders by default, where:
 
 ### ArrayUtils
 
-This class provides two static methods to work with arrays of integers.
+This class provides four static methods to work with arrays of integers.
 
 - The `generateRandomElement` method will generate random integers between the specified minimum and maximum values and store them in the given array.
 
 - The `printArray` method will print the contents of the given array to the console in a formatted string.
+
+- The `checkSort` method checks if the given integer array is sorted in increasing or decreasing order, or not sorted at all.
+
+- The `printResult` method will print the search result to the console.
 
 ### FileUtils
 
@@ -59,15 +63,3 @@ This class provides two static methods to normalize a given string
 - The `removeUnnecessaryBlank` method will remove all unnecessary whitespace from the given string by replacing all consecutive whitespace characters with a single space.
 
 - The `removeAllBlank` method will remove all whitespace from the given string.
-
-### SearchUtils
-
-This class provides static methods to perform search operations on data.
-
-- The `printResult` method will print the search result to the console.
-
-### SortUtils
-
-This class provides static methods to perform sorting operations on data.
-
-- The `checkSort` method checks if the given integer array is sorted in increasing or decreasing order, or not sorted at all.
