@@ -75,7 +75,7 @@ public class ArrayUtils {
      *                     with the number that was searched, and the index at which
      *                     the number was found.
      */
-    public static void printResult(int indexSearch, int numberSearch) {
+    public static void printSearchResult(int indexSearch, int numberSearch) {
         System.out.println(indexSearch == -1 ? "Not found " + numberSearch
                 : "Found " + numberSearch + " at index: " + indexSearch);
     }
