@@ -9,11 +9,13 @@ import java.util.Map;
  */
 public class Counter {
     public static void wordsCount(String content) {
-        String[] words = content.split("\\W+|\\d+|\\s+");
+        // String[] words = content.split("\\W+|\\d+|\\s+");
+        StringTokenizer tokenizer = new StringTokenizer(content, " \t\n\r\f,.?!;:+-=\"'()[]{}<>\\/");
 
         Map<String, Integer> wordCounts = new HashMap<>();
 
-        for (String word : words) {
+        while (tokenizer.hasMoreTokens()) {
+            String word = tokenizer.nextToken();
             if (!wordCounts.containsKey(word)) {
                 wordCounts.put(word, 0);
             }
