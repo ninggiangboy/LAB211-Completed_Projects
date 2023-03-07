@@ -42,6 +42,11 @@ public class Student {
     public List<Course> getCourses() {
         return courses;
     }
+    
+    public void setCourses(List<Course> coursesTemp) {
+        this.courses.clear();
+        this.courses.addAll(coursesTemp);
+    }
 
     public void addNewCourse(String sem, String course) {
         if (isCourseExist(sem, course))
