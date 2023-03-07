@@ -73,7 +73,6 @@ public class Manager {
             }
             course.setSemester(uSemester);
             course.setCourseName(uCourseName);
-            return;
         } while (Inputted.inputBoolean("Do you want to continue update this student (Y/N)?: "));
     }
 
@@ -115,14 +114,20 @@ public class Manager {
     private void updateStudent(Student st) {
         st.printCourse();
         System.out.println("0. Add new course.");
-        List<Course> courses = st.getCourses();
-        int choice = Inputted.inputInt("Choose a course to update: ", 0, courses.size()) - 1;
+        List<Course> coursesTemp = new ArrayList<>();
+        coursesTemp.addAll(st.getCourses());
+        int choice = Inputted.inputInt("Choose a course to update: ", 0, coursesTemp.size()) - 1;
         if (choice == -1)
             addCourse(st);
         else
-            updateCourse(courses.get(choice), st);
-        st.printCourse();
-        System.out.println("Student ID: " + st.getId() + " has been updated successfully");
+            updateCourse(coursesTemp.get(choice), st);
+        if (Inputted.inputBoolean("Do you want to confirm this update (Y/N)?: ")) {
+            st.setCourses(coursesTemp);
+            st.printCourse();
+            System.out.println("Student ID: " + st.getId() + " has been updated successfully");
+            return;
+        }
+        System.out.println("Student ID: " + st.getId() + " hasn't been updated yet");
     }
 
     public void findStudent() {
