@@ -43,9 +43,9 @@ public class Student {
         return courses;
     }
     
-    public void setCourses(List<Course> coursesTemp) {
+    public void setCourses(List<Course> courses) {
         this.courses.clear();
-        this.courses.addAll(coursesTemp);
+        this.courses.addAll(courses);
     }
 
     public void addNewCourse(String sem, String course) {
