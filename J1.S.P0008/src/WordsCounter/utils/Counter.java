@@ -8,27 +8,27 @@ import java.util.Map;
  * @author duykhanh
  */
 public class Counter {
-    public static void wordsCount(String content) {
+   public static void wordsCount(String content) {
         // String[] words = content.split("\\W+|\\d+|\\s+");
         StringTokenizer tokenizer = new StringTokenizer(content, " \t\n\r\f,.?!;:+-=\"'()[]{}<>\\/1234567890");
 
-        Map<String, Integer> wordCounts = new HashMap<>();
+        Map<String, Integer> words = new HashMap<>();
 
         while (tokenizer.hasMoreTokens()) {
             String word = tokenizer.nextToken();
-            if (!wordCounts.containsKey(word)) {
-                wordCounts.put(word, 0);
+            if (!words.containsKey(word)) {
+                words.put(word, 0);
             }
-            wordCounts.put(word, wordCounts.get(word) + 1);
+            words.put(word, words.get(word) + 1);
         }
 
         StringBuilder result = new StringBuilder();
-        for (String word : wordCounts.keySet()) {
-            result.append(word).append("=").append(wordCounts.get(word)).append(", ");
+        for (String word : words.keySet()) {
+            result.append(word).append("=").append(words.get(word)).append(", ");
         }
         System.out.println("{" + result.substring(0, result.length() - 2) + "}");
     }
-
+    
     public static void charsCount(String content) {
         int[] count = new int[26];
 
