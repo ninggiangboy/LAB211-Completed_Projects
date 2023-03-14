@@ -16,7 +16,7 @@ public class EBank {
 
     private ResourceBundle language;
 
-    private final String VALID_ACCOUNTNUMBER = "^\\d{10}$";
+    private final String VALID_ACCOUNT_NUMBER = "^\\d{10}$";
     private final String VALID_PASSWORD_LENGTH = "^.{8,31}$";
     private final String VALID_PASSWORD_ALPHANUMERIC = "^(?=.*[a-zA-Z])(?=.*[0-9])[A-Za-z0-9]+$";
     private final String VALID_CAPTCHA = "^[A-Z0-9]{1}$";
@@ -33,7 +33,7 @@ public class EBank {
     }
 
     public String checkAccountNumber(String accountNumber) {
-        if (!accountNumber.matches(VALID_ACCOUNTNUMBER))
+        if (!accountNumber.matches(VALID_ACCOUNT_NUMBER))
             return Message.getMessage(language, "remindAccountNumber");
         return null;
     }
