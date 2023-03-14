@@ -10,7 +10,7 @@ import java.util.Map;
 public class Counter {
    public static void wordsCount(String content) {
         // String[] words = content.split("\\W+|\\d+|\\s+");
-        StringTokenizer tokenizer = new StringTokenizer(content, " \t\n\r\f,.?!;:+-=\"'()[]{}<>\\/1234567890");
+        StringTokenizer tokenizer = new StringTokenizer(content.toLowerCase, " \t\n\r\f,.?!;:+-=\"'()[]{}<>\\/1234567890");
 
         Map<String, Integer> words = new HashMap<>();
 
